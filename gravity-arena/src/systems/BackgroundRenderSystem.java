@@ -17,7 +17,7 @@ public class BackgroundRenderSystem extends VoidEntitySystem {
 	
 	@Override
 	protected void processSystem() {
-		Gdx.gl20.glLineWidth(2);
+	    Gdx.gl20.glLineWidth(2);
 	    renderer.setProjectionMatrix(camera.combined);
 	    renderer.begin(ShapeType.Line);
 	    renderer.setColor(70/255f, 70/255f, 70/255f, 1);
